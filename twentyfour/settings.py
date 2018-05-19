@@ -1,0 +1,39 @@
+#!/usr/bin/env python 
+#greedy snake's constant paraments
+
+#pygame settings
+SCREEN_SIZE = (660,580)
+NUMBER_SIZE = 60
+NUMBER_FONT = "arial"
+WIN_TEXT = "you win"
+WINPOS = (400,350)
+SCREEN_CAPTION = 'twenty four game'
+BACKGROUND_IMAGE_FILENAME = None
+BACKGROUND_COLOR = (0,0,0)      #BLACK
+NUMBER_POS = [(100,250),(200,250),(300,250),(400,250)]
+ARITHMETIC_POS = [(100,250),(150,250),
+                  (200,250), (250,250),(300,250),
+                  (350,250), (400,250)] 
+NUMBER_COLOR = (0,255,0)    #green
+SYMBOL_COLOR = (125,125,200)
+SELECTBOX_SIZE = (50,60)
+SELECTBOX_COLOR = (255,255,255)      #white 
+SELECTEDBOX_COLOR = (0,0,255)        #red
+GROUPONEBOX_COLOR = (50,50,200)
+GROUPTWOBOX_COLOR = (150,50,200)
+DELAY_TIME = 0.1
+BOXNOTFILL = 1
+BOXISFILL = 0
+GROUPONE = 1
+GROUPTWO = 2
+
+NUMBER_DICTIONARY = {
+	'A':1.0,'2':2.0, '3':3.0, '4':4.0, '5':5.0, '6':6.0, '7':7.0, 
+	'8':8.0, '9':9.0, 'T':10.0, 'J':11.0, 'Q':12.0, 'K':13.0, 
+              }
+K_KP_PLUS = 270
+K_KP_MINUS = 269
+K_KP_MULTIPLY = 268
+K_KP_DIVIDE = 267
+SYMBOL_DICTIONARY = {K_KP_PLUS:'+' ,K_KP_MINUS:'-' ,K_KP_MULTIPLY:'*', K_KP_DIVIDE:'/'}
+

@@ -1,0 +1,32 @@
+#!/usr/bin/env python 
+#greedy snake's constant paraments
+
+#pygame settings
+SCREEN_SIZE = (660,580)
+SCREEN_CAPTION = 'greedy snake'
+BACKGROUND_IMAGE_FILENAME = None
+BACKGROUND_COLOR = (0,0,0)      #BLACK
+
+
+#snake and barrier
+SNAKEWIDTH = 22
+SNAKEHEIGHT = 24
+SNAKE_COLOR = (0,255,0)           #GREEN
+BARRIER_COLOR = (125,125,255)
+
+#spot and score-board
+SPOTLINE_COLOR = (255,255,255)          #WHITE
+SPOTGRIDNUM = 20
+SPOTWIDTH = SPOTGRIDNUM*SNAKEWIDTH         #15 = gridnum
+SPOTHEIGHT = SPOTGRIDNUM*SNAKEHEIGHT
+SPOTSTART_POS = (30,30+int(SNAKEHEIGHT/2))
+SPOTEND_POS = (SPOTSTART_POS[0]+SPOTWIDTH-int(SNAKEWIDTH/2),SPOTSTART_POS[1]+SPOTHEIGHT-int(SNAKEHEIGHT/2))
+SPOTNOTFILL = 1        #1=not filled    0= filled
+SNAKEPOS_COORDINATE = (SPOTEND_POS[0]+40,40)
+SCORE_COORDINATE = (SPOTEND_POS[0]+40,80)
+#snake life
+BIRTH_POS = int(SPOTGRIDNUM/2)
+
+#control cipher
+DIRECTIONS = {'left':1,'right':2,'up':3,'down':4}
+
